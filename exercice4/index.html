@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Caisse enregistreuse</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link href="style.css">
+    </head>
+    <body>
+        <div class="container">
+        <div class="row mt-5">
+            <div class="col-sm-12 text-center">
+                <h1>Caisse enregistreuse</h1>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-3 mt-5 text-center">
+                <div class="mb-6">
+                    <label for="total" class="form-label">Saisissez le montant tottal à payer:</label>
+                    <input type="text" class='form-control' id="total" aria-describedby="total">
+                </div>
+            </div>
+            <div class="col-sm-3 mt-5 text-center">
+                <div class="mb-6">
+                    <label for="monnaie" class="form-label">Saisissez le montant donné par le client:</label>
+                    <input type="text" class="form-control" id="monnaie" aria-describedby="monnaie">
+                </div>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-sm-12">
+                <div class="text-center">
+                    <button type="submit" id="button" class="btn btn-primary mt-5">Rendre la monnaie</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-5">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body dix euro">
+                        <img src="Billet-10-Euros-recto.jpeg" width="100%">
+                        <div id="message10" class="valeur-alignee"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body dix euro">
+                        <img src="Billet-5-Euros-recto.jpeg" width="100%">
+                        <div id="message5" class="valeur-alignee"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3">
+                <div class="card">
+                    <div class="card-body dix euro">
+                        <img src="un_euro.jpeg" width="100%">
+                        <div id="message1" class="valeur-alignee"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <script src="script.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Quelle heure est il?</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <link href="style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="col-sm-6 mx-auto mt-5 text-center">
+                <div class="mb-6">
+                    <label for="heure" class="form-label">Entrez une heure</label>
+                    <input type="number" class="form-control" id="heure" aria-describedby="heure">
+                    <label for="minute" class="form-label">Entrez les minutes</label>
+                    <input type="number" class="form-control" id="minute" aria-describedby="minute">
+                    <label for="seconde" class="form-label">Entrez les secondes</label>
+                    <input type="number" class="form-control" id="seconde" aria-describedby="seconde">
+                    <div class="form-text">Dans une seconde, il sera... </div>
+                </div>
+                <button type="submit" id="bouton" class="btn btn-primary mt-5">Afficher</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-3 mx-auto mt-5 text-center">
+                <div id="message"></div>
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    </body>
+</html>
